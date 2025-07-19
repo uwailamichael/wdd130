@@ -7,6 +7,29 @@
     --border: 1px solid rgb(0 0 0 / 0.1);
     */
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+
+.box{
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0/0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+
+}
+
+main img {
+    /*likely have other declarations here*/
+    float: right;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -40,17 +63,18 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0/0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2{
+    position:  absolute;
+    top: 47px;
+    left: 150px;
 }
 
 main img {
