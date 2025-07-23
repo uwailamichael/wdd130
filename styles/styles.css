@@ -1,93 +1,122 @@
-:root {
-    /*
+ /*:root {
+    
     --heading-background-color: #f06;
     --heading-text-color: $333;
     --heading-font: 'Montserrat', Heltvetica, sans-serif;
     --padding: 1rem;
     --border: 1px solid rgb(0 0 0 / 0.1);
+    
+}
+ */
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-size: 16px;
+     font-family: Roboto, Arial, san-serif;
+ }
+
+ /* Class Selectors */
+
+ .box {
+     margin: 1rem;
+     border: 1px solid rgb(0 0 0/0.1);
+     padding: 1rem;
+     background-color: #eee;
+     color: #333;
+
+ }
+
+ .indent {
+     padding-left: 1rem;
+ }
+
+ main img {
+     /*likely have other declarations here*/
+     width: 150px;
+     height: auto;
+     border: 1px solid steelblue;
+     padding: 2px;
+     box-shadow: 0 0 30px gray;
+     margin: 0 0 1rem 1rem;
+     float: right;
+ }
+
+ nav {
+     background-color: darkblue;
+     padding: 10px;
+ }
+
+ nav a {
+     color: white;
+     display: block;
+     padding: 20px;
+ }
+
+ h1 {
+     color: darkblue;
+ }
+
+ img {
+     width: 150px;
+     height: auto;
+     border: 1px solid black;
+     padding: 2px;
+     box-shadow: 0 0 30px gray;
+ }
+
+ p {
+     padding: 10px;
+ }
+
+ main {
+     max-width: 840px;
+ }
+
+ aside {
+     width: 20rem;
+     text-align: center;
+     position: relative;
+ }
+
+ aside img {
+     width: 200px;
+     height: auto;
+ }
+
+ aside h2 {
+     position: absolute;
+     top: 47px;
+     left: 150px;
+ }
+
+ main img {
+     width: 200px;
+     height: auto;
+ }
+
+ p {
+     margin: 1 rem;
+     padding: 0;
+ }
+
+ footer {
+     margin-top: 15px;
+     border-top: 1px solid #000;
+     text-align: center;
+ }
+
+ /* 
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
     */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Class Selectors */
-
-.box{
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0/0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-
-}
-
-main img {
-    /*likely have other declarations here*/
-    float: right;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: darkblue;
-}
-
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 10px;
-}
-
-main {
-    max-width: 840px;
-}
-
-aside {
-    width: 20rem;
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-aside h2{
-    position:  absolute;
-    top: 47px;
-    left: 150px;
-}
-
-main img {
-    width: 200px;
-    height: auto;
-}
-
-p {
-    padding: 0;
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
