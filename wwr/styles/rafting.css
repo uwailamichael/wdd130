@@ -24,10 +24,6 @@ header {
     height: auto;
 }
 
-nav {
-    background-color: none;
-}
-
 .navigation ul {
     list-style-type: none;
     display: flex;
@@ -91,11 +87,13 @@ h2 {
     margin: 16px;
     padding: 0;
     font-family: var(--heading-font);
+    color: var(--secondary-color);
 }
 
 p,
 section,
-article {
+article,
+nav {
     margin: 16px;
     padding: 8px;
 }
@@ -116,14 +114,14 @@ article {
 
 
 .hero article img {
-    float: center;
+    float: right;
     width: 125px;
 }
 
 figure {
     border: thin silver solid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     padding: 5px;
     max-width: 220px;
     margin: auto;
