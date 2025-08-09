@@ -10,6 +10,41 @@
 header {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+.wwr-logo {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+nav {
+    background-color: none;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: blank;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--accent1-color);
+    padding: 1 rem;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 * {
@@ -30,13 +65,34 @@ footer {
     margin: 0 auto;
 }
 
-h1,
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 16px;
+    padding: 0;
+    font-family: var(--heading-font);
+}
+
 p,
 section,
 article {
@@ -58,18 +114,52 @@ article {
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
 
 .hero article img {
-    float: right;
+    float: center;
     width: 125px;
+}
+
+figure {
+    border: thin silver solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: none;
+    color: none;
+    padding: 3px;
+    text-align: center;
+    font: var(--body-font);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 1rem auto;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+footer .socialmedia img {
+    width: 30px;
+    height: auto;
 }
